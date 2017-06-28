@@ -1,0 +1,32 @@
+<html>
+<head><title>AJAX/PHP Email Sender</title></head>
+<link rel="stylesheet" href="main.css">
+<body>
+	<div class="pageWrap">
+	<h1>Contact Us</h1>
+	<div class="formInputs"></div>
+		<form id="contact-form" method="POST" action="send-email.php">
+			<div class="inputs input-name">
+				<label for="name">Name:</label>
+				<input type="text" class="name" name="name" required>
+			</div>
+			
+			<div class="inputs input-email">
+				<label for="email">Email:</label>
+				<input type="email" class="email" name="email" required>
+			</div>
+			
+			<div class="inputs input-message">
+				<label for="message">Email:</label>
+				<textarea type="message" class="message" name="message" required></textarea>
+			</div>
+			
+			<div class="inputs input-message">
+				<button type="submit">Send</button>
+			</div>
+		</form>
+	</div>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
